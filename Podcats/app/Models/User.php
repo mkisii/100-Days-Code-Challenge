@@ -11,6 +11,13 @@ class User extends Authenticatable
 {
     use HasFactory, Notifiable;
 
+    public function podcast()
+    {
+        return $this->hasMany('App\Podcast');
+
+        
+    }
+
     /**
      * The attributes that are mass assignable.
      *

@@ -21,3 +21,5 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/users/{id}', [App\Http\Controllers\UsersController::class, 'show']);
+Route::get('/users/{id}/podcasts', [App\Http\Controllers\PodcastsController::class, 'index']);
+  
