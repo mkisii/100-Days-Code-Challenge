@@ -19,7 +19,7 @@ class CreatePodcastsTable extends Migration
             $table->string('title');
             $table->string('file_name');
             $table->integer('user_id');
-            $table->foreign('user_id')->references('id')->on('users');
+            
             
         });
     }

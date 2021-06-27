@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use DB;
+use Illuminate\Support\Facades\DB;
 
 class PodcastsTableSeeder extends Seeder
 {
@@ -15,10 +15,10 @@ class PodcastsTableSeeder extends Seeder
     public function run()
     {
         //
-        DB::table('podcasts')->insert([
-            'title' => Str::random(10),
-            'file_name' => Str::random(10).'.mp3',
-            'user_id' => 1,
+        \DB::table('podcasts')->insert([
+            'title' => 'How I become Programmer',
+            'file_name' => 'Dance.mp3',
+            'user_id' => 1
         ]);
     }
 }

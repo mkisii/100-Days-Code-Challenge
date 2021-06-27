@@ -26,9 +26,12 @@ class PodcastsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create($id)
     {
         //
+        $user = User::find($id);
+
+        return view('podcasts.create', ['user' => $user]);
     }
 
     /**
@@ -37,9 +40,21 @@ class PodcastsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, $id)
     {
         //
+        $user = User::find($id);
+        $podcast = $user->podcast;
+
+        $podcast = new Podcast();
+
+        $podcast->title = $request->title;
+        $podcast->file_name = $request->file_name;
+        $podcast->user_id = $request->user_id;
+
+        $podcast->save();
+
+        return view('users.show', ['user' => $user, 'podcast'=>$podcasts]);
     }
 
     /**
@@ -48,9 +63,13 @@ class PodcastsController extends Controller
      * @param  \App\Models\Podcast  $podcast
      * @return \Illuminate\Http\Response
      */
-    public function show(Podcast $podcast)
+    public function show($id)
     {
         //
+        $podcast = Podcast::find($id);
+
+        return view('podcasts.show',['podcast' => $podcast]);
+
     }
 
     /**
