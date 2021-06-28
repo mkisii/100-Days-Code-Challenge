@@ -20,5 +20,12 @@ class PodcastsTableSeeder extends Seeder
             'file_name' => 'Dance.mp3',
             'user_id' => 1
         ]);
+        
+        DB::table('podcasts')->insert([
+            'title' => 'New Epsiode',
+            'file_name' => 'New.mp4',
+            'user_id' => 5
+
+        ]);
     }
 }

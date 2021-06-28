@@ -54,7 +54,7 @@ class PodcastsController extends Controller
 
         $podcast->save();
 
-        return view('users.show', ['user' => $user, 'podcast'=>$podcasts]);
+        return view('users.show', ['user' => $user, 'podcasts'=>$podcast]);
     }
 
     /**
