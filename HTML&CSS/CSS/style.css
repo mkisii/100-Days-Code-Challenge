@@ -1,0 +1,15 @@
+body{
+    background-color: aquamarine;
+    font-family: sans-serif;   
+    
+}
+
+.wrap{
+    margin:auto;
+    width: 500px;
+}
+.myquote{
+    border: 1px solid white;
+    text-align: none;
+    margin: 0;
+}
