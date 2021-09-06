@@ -13,7 +13,7 @@
                         @endif
 
                         {{ __('You are logged in!') }}
-                        <h2>Welcome to My podcasts</h2>
+
                     </div>
                 </div>
             </div>

@@ -9,7 +9,7 @@
                         <h3>
                             {{ $user->name }}.
                         </h3>
-                        <a href="{{ route('podcasts.create', ['user' => $user->idgit]) }}"> Create New Episode
+                        <a href="/podcasts.create, ['user' => $user->id]"> Create New Episode
                             <button class="btn btn-outline-primary">
                             </button>
                         </a>
@@ -26,9 +26,9 @@
                             {{-- @foreach ($podcasts as $podcast) --}}
 
                             <li>
-                                <a href="/podcasts.show, ['user' => $user->id, 'podcast' => $podcast]">
+                                <a href="{{ route('podcasts.show', ['user' => $user->id, 'podcast' => $podcast]) }}">
 
-                                    {{ $user->id }}. Episode: {{ '' }}
+                                    {{ $user->id }}. Episode: {{ $podcast->title }}
 
                                 </a>
                             </li>
