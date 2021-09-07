@@ -1,0 +1,75 @@
+body{
+    background-color: aquamarine;
+    font-family: sans-serif; 
+    /* background-image: url(../img/IoT2.jpg); 
+    background-repeat: repeat; */
+
+
+   
+    
+}
+.myquote{
+    border: 1px solid white;
+    text-align: none;
+    margin: 0;
+}
+
+/* Body section CSS */
+
+.wrap{
+    margin:auto;
+    min-width: 600px;
+    width: 80%;
+    overflow: hidden;
+
+}
+.content,aside{
+    height: 600px;
+}
+
+.content{
+    background-color: wheat;
+    float: right;
+    width: 80%;
+}
+.sidebar{
+    background-color: rgb(179, 245, 193);
+    float: left;
+    padding-left: 0;
+    width: 20%;
+}
+
+/* Sidebar Section CSS */
+ ul{
+    list-style: none;
+    padding: 18px;
+
+}
+li {
+    display: inline;
+    padding-right: 10px;
+    
+}
+
+/* Navbar Section CSS */
+ul a{
+    text-decoration: none;
+
+}
+ul a:hover{
+    text-decoration: underline;
+}
+
+/* Contact form Section CSS */
+form li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+label{
+    display: block;
+
+}textarea{
+    width: 300px;
+    height: 200px;
+}
