@@ -1,0 +1,69 @@
+body{
+    width: 600px;
+    margin: 20px auto;
+    font-family: sans-serif;
+}
+article img{
+    float: left;
+    margin-right:30px;
+    height: 120px;
+    width: 160px;
+}
+article h2{
+    font-size: 39px;
+    line-height: 1em;
+    margin: 0;   
+}
+article .continue{
+    float: right;
+}
+
+a{
+    color: #276056;
+}
+p{
+    font-size: 14px;
+    letter-spacing: -1px;
+
+}
+.meta{
+    padding-left: 0;
+}
+.meta a{
+    font-style: italic;
+    font-size: 14px;
+}
+.meta li{
+    display: inline;
+}
+.meta li:after{
+    
+    padding: 0 5px;
+    color: #999;
+}
+
+.preview{
+    float: right;
+    width: 350px;
+}
+.post_info{
+    background: #f3f3f3;
+    color: #999;
+    padding: 3px;
+    float: left;
+    font-size: 14px;
+}
+.post_info a{
+    color: #999;
+    text-decoration: none;
+}
+.post_info a:hover{
+    color: black;
+}
+
+.body{
+    clear: both;
+    color: #575757;
+   
+
+}
