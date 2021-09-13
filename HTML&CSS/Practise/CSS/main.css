@@ -5,13 +5,17 @@ body{
     background-repeat: repeat; */ 
     
 }
-h1, h2{
+h1{
     text-align: center;
     text-transform: uppercase;
     text-shadow: 0 1px 0 white;
     letter-spacing: 6px;
     color: black;
     margin-top: 20px;
+
+}
+header{
+    background-color: coral;
 }
 .myquote{
     border: 1px solid white;
@@ -38,7 +42,7 @@ h1, h2{
     float: right;
     width: 80%;
 }
-.sidebar{
+aside{
     background-color: rgb(179, 245, 193);
     float: left;
     padding-left: 0;
@@ -58,8 +62,9 @@ li {
 }
 
 /* Navbar Section CSS */
-.navbar a{
+nav li a{
     text-decoration: none;
+    display: inline;margin-left: 0; margin-right: 2px;
    
 
 }
@@ -84,7 +89,8 @@ form li{
 label{
     display: block;
 
-}textarea{
+}
+textarea{
     width: 300px;
     height: 200px;
 }

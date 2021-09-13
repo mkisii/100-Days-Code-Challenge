@@ -1,0 +1,103 @@
+
+/* =header */
+header{
+    overflow: hidden;
+   
+    
+}
+header h1 {
+    background:url(../img/log.jpg);
+    background-repeat: no-repeat;
+    text-indent: -99999px;
+    width: 250px;
+    height: 100px;
+    margin: 10px 10px 20px 10px;
+    float: left;
+
+}
+/* =nav */
+nav{
+    float: right;
+    padding: 12px;
+}
+
+
+nav li{
+    display: inline;
+}
+
+/* =banner */
+
+.banner{
+    background-image: url(../img/IoT.jpg);
+    background-repeat: no-repeat;
+    width: 695px;
+    height: 231px;
+}
+.banner h2{
+    color:white;
+    font-size: 30px;
+}
+.callout{
+    background: rgb(61, 159, 216);
+    height: 231px;
+    /* margin-left: 60px; */
+   
+}
+a{
+    text-decoration: none ;
+}
+a:hover{
+    color: black;
+}
+
+/* .grid_9{background: red;}
+.grid_6{background: orange;}
+container_24{background: palegreen;} */
+
+/* =main section */
+.main   {
+    margin-top: 20px;
+}
+.main blockquote p{
+    font-size: 15px;
+    line-height: 20px;
+    font-style: italic;
+}
+.main blockquote p:first-child:before,
+.main blockquote p:last-child:after{
+    content: '"';
+}
+
+/* =Miscellanous */
+
+.button{
+    background: rgb(7, 145, 155);
+    padding: 6px;
+    text-transform: uppercase;
+    color: white;
+
+}
+.button:hover{
+    color: black;
+}
+h3{
+    font-size: 26px;
+    border-bottom: 1px solid #0c0b0bc7;
+    padding-bottom: 30px;
+}
+p{
+    font-size: 13px;
+    line-height: 20px;
+    color: #353535;
+}
+
+/* =footer section */
+footer p{ 
+    clear: both;
+    padding-top: 1px solid #0c0b0bc7;
+    margin-top: 50px;
+}
+
+
+
